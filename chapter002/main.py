@@ -32,8 +32,6 @@ def main():
     # 1. ChatGPTのモデルを呼び出すように設定
     #    (デフォルトではGPT-3.5 Turboが呼ばれる)
     llm = ChatOpenAI(temperature=0)
-    result = llm.invoke("Hello, how are you?")
-    print(result)
 
     # 2. ユーザーの質問を受け取り、ChatGPTに渡すためのテンプレートを作成
     #    テンプレートには過去のチャット履歴を含めるように設定
